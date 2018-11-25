@@ -106,11 +106,95 @@ header #search input[type="search"]:focus{
 	color: #000;
 }
 
-
-
-
 /* hero section
 =================*/
+#hero{
+	margin: 0 50px ;
+}
+#hero ul{
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 100px;
+	padding: 0 20px;
+}
+#hero ul li{
+	margin-bottom: 40px;
+}
+#hero ul li i{
+	font-size: 16px;
+}
+#hero .line{
+	width: 2px;
+    height: 60px;
+	background: black;
+	margin-left: 28px;
+	margin-bottom: 72px;
+}
+#hero .profile-number{
+	margin-left: 18px;
+	transform: rotate(-90deg);
+	transform-origin: left top 0;
+}
+#hero button{
+	background-color: #b4d3d3;
+	border: none;
+	width: 250px;
+	height: 70px;
+	font-family: "Nunito";
+	font-size: 16pt;
+	color : white;
+	padding: 20px;
+	margin-left: 30px;
+	margin-top: 90px;
+	position: relative;
+}
+#hero button::after{
+	content: "";
+	width: 70px;
+    height: inherit;
+    top: 0px;
+    right: -70px;
+	position: absolute;
+	background:white url("../images/play.png") no-repeat center;
+}
+#hero button img{
+	max-width: 25px;
+	max-height: 35px;
+}
+#hero .hero-image{
+	background: url(../images/hero.jpg) no-repeat;
+	padding: 141px 0;
+}
+#hero .hero-image h2{
+	font-size: 100pt;
+	font-family: "Poppins";
+	font-weight: 400;
+	text-transform: capitalize;
+	margin-left: -103px;
+	line-height: 1em;
+}
+#hero .hero-image p{
+	font-size: 17pt;
+	margin-left: -103px;
+	margin-top: 78px;
+	text-transform: uppercase;
+}
+
+#hero .image-count ul{
+	padding: 312px 0px 0px 20px;
+	font-size: 12pt;
+}
+#hero .image-count ul li{
+	margin: 25px;
+}
+#hero .horizontal-line{
+	background-color: #000;
+	width: 41px;
+    height: 2px;
+    margin-top: 393px;
+    margin-left: 16px;
+    padding: 0;
+}
 
 
 /* catigories section
