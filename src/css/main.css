@@ -53,7 +53,59 @@ header nav a:hover{
 }
 header #logo img{
 	max-width: 225px;
+
 }
+header #search{
+	text-align: right;
+	position: relative;
+
+}
+header #search::after{
+	content: "";
+	position: absolute;
+	min-width: 500px;
+	height: 500px;
+	top: -60px;
+	right: -110px;
+	margin: 0 50px;
+	background-color:#c6dddd;
+	z-index: -1;
+}
+header #search form{
+	margin-right: -30px;
+}
+header #search form input[type="search"]{
+	font-size: 14pt;
+	padding: 5px;
+	width: 0%;
+	border:none;
+	opacity: 0;
+	color:transparent;
+	background-color: transparent;
+	transition: width 500ms ease-in,
+				opacity 900ms ease-in,
+				color 500ms ease-in;
+}
+header #search form a i{
+	transition: color 500ms;
+}
+header #search form a:hover i{
+	color: #4c7879;
+}
+header #search form:hover input[type="search"]{
+	width: 80%;
+	background-color: white;
+	display: inline-block;
+	opacity: 1;
+	color: #000;
+}
+header #search input[type="search"]:focus{
+	width: 80%;
+	background-color: white;
+	opacity: 1;
+	color: #000;
+}
+
 
 
 
