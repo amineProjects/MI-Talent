@@ -24,6 +24,11 @@ img,h1,h2,h3,h4,h5,h6,p,form,input{
 	width: 100%;
     padding: 15px;
 }
+.container{
+	position: relative;
+	background: rgb(133, 37, 37);
+	padding: 0;
+}
 .row::after {
     content: "";
     clear: both;
@@ -199,7 +204,60 @@ header #search input[type="search"]:focus{
 
 /* catigories section
 =======================*/
+.talent-image{
+	width: 100%;
+	display: block;
+	height: auto;
+}
+.overlay{
+	transition: opacity .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	background-color: #2d2f3365;
+	padding: 10px;
+}
 
+.container:hover .overlay{
+	opacity: 1;
+}
+.overlay .artist-info{
+	position: absolute;
+	top: 80%;
+	left: 20%;
+	right: 20%;
+	color: white;
+	text-align: center;
+	transform: translate(-0%,-50%);
+}
+.artist-info p:nth-of-type(1){
+	text-transform: capitalize;
+	font-family: 'Poppins';
+	font-size: 30pt;
+}
+.artist-info p:nth-of-type(2){
+	text-transform: uppercase;
+	font-family: 'Nunito';
+	font-size: 12pt;
+	color: #adadb5;
+}
+.overlay .artist-link{
+	position: absolute;
+	top: 4%;
+	right:4%;
+	border-radius: 50%;
+	background-color: #b4d3d3;
+	width: 60px;
+	height: 60px
+}
+.overlay .artist-link img{
+	width: 30%;
+	margin: 21px;
+}
 
 /* stories section
 ====================*/
