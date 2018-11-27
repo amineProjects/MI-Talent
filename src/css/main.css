@@ -276,6 +276,35 @@ header #search input[type="search"]:focus{
 .talent-row{
 	padding: 0 30px;
 }
+.more-catigory{
+	text-align: center;
+	padding: 30px 0;
+}
+.more-catigory button{
+	width: 260px;
+	height: 60px;
+	background-color: #b4d3d3;
+	border: none;
+	color: white;
+	font-size: 14pt;
+	text-transform: uppercase;
+	border-radius: 26px;
+	padding: 25px 40px;
+	line-height: 1em;
+	transition: background-color .5s ease;
+}
+.more-catigory button:hover{
+	background-color: #4c7879;
+}
+.more-catigory button:active{
+	background-color: white;
+	color: #b4d3d3;
+	border:2px solid #b4d3d3;
+}
+.more-catigory button:focus{
+	outline: none;
+}
+
 
 /* stories section
 ====================*/
