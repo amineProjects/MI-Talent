@@ -204,6 +204,7 @@ header #search input[type="search"]:focus{
 
 /* catigories section
 =======================*/
+
 .talent-image{
 	width: 100%;
 	display: block;
@@ -257,6 +258,9 @@ header #search input[type="search"]:focus{
 .overlay .artist-link img{
 	width: 30%;
 	margin: 21px;
+}
+.talent-row{
+	padding: 0 30px;
 }
 
 /* stories section
