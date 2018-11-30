@@ -26,7 +26,6 @@ img,h1,h2,h3,h4,h5,h6,p,form,input{
 }
 .container{
 	position: relative;
-	background: rgb(133, 37, 37);
 	padding: 0;
 }
 .row::after {
@@ -339,12 +338,107 @@ header #search input[type="search"]:focus{
 	color: #000;
 	font-family: 'Poppins';
 	font-size: 14pt;
+	transition: color .5s ease;
 }
 .headline-story a:hover{
 	color: #87bbbc;
 }
 .story-date{
 	margin-top: 30px;
+}
+
+.gradian-story{
+	background: linear-gradient(180deg, #d8e6e6,#b6d4d4);
+	padding: 125px  32px 32px 32px;
+	color: white;
+}
+.gradian-story p{
+	margin-top: 32px;
+	text-transform: capitalize;
+	font-family: 'Poppins';
+	font-size: 20pt;
+	font-weight: 500;
+}
+
+.less-height{
+	width: 100%;
+}
+.topright{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 10px;
+
+}
+.btn-trending{
+	border: none;
+	background: white;
+	text-transform: uppercase;
+	padding: 23px 55px;
+	font-size: 12pt;
+	font-weight: 600;
+	width: 206px;
+	transition: color .5s ease;
+}
+.btn-trending:hover{
+	color: #87bbbc;
+}
+.btn-trending:focus{
+	outline: none;
+}
+.btn-trending:active{
+	color: white;
+	background: #87bbbc;
+}
+.small2-story{
+	padding-left: 0;
+}
+.small2-story p{
+	font-family: 'Poppins';
+	font-size: 18pt;
+	font-weight: 500;
+}
+.small2-story .story-date{
+	color: #adadb5;
+}
+
+.carosell-story img:first-of-type{
+	width: 100%;
+	margin-top: 15px;
+	height: 400px;
+}
+.bottom-left{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.carosell-story ul{
+	position: absolute;
+	top: 35%;
+	right: 0;
+	color: white;
+	margin-right: 10px;
+}
+.carosell-story .round-play{
+	width: 94px;
+	height: 94px;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 15px;
+	text-align: center;
+	margin-left: 30px;
+	margin-bottom: 40px;
+}
+.carosell-story  p{
+	color: white;
+	position: absolute;
+	bottom: 18%;
+	left: 35%;
+	margin-left: 20px;
+}
+.carosell-story .round-play img{
+	width: 27px;
+	height: 35px;
 }
 
 /* footer section
