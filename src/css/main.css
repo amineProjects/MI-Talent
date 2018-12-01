@@ -485,8 +485,57 @@ header #search input[type="search"]:focus{
 
 /* footer section
 =================*/
+.logo-footer{
+	padding: 40px;
+	position: relative;
+}
+.logo-footer::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 3%;
+	width: 94%;
+	height: 2px;
+	background-color: #f5f5f5;
+}
+.sign-up{
+	text-align: right;
+	text-transform: uppercase;
+	position: relative;
+}
+.sign-up p{
+	display: inline-block;
+	margin-right: 30px;
+	padding-left: 50px;
+	padding-bottom: 10px;
+	font-weight: 500;
+}
+.sign-up::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 45%;
+	width: 1px;
+	height: calc(100% - 10px);
+	background-color: #b4d3d3;
+}
+.sign-up i{
+	font-size: 16pt;
+}
 
+.copyright{
+	color: #77777e;
+	padding-top: 30px;
+}
+.social-footer ul{
+	text-align: right;
+	list-style: none;
 
+}
+.social-footer ul li{
+	display: inline-block;
+	padding: 0 20px;
+}
 
 /* media queries
 =================*/
