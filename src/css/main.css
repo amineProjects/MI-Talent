@@ -441,6 +441,48 @@ header #search input[type="search"]:focus{
 	height: 35px;
 }
 
+.right-image{
+	width: 100%;
+	height: 730px;
+}
+.story-subtitle{
+	font-family: 'Poppins';
+	font-size: 18pt;
+	font-weight: 500;
+	text-align: left;
+}
+.story-date{
+	color: #adadb5;
+	text-align: left;
+}
+
+.center{
+	position: absolute;
+	bottom: 20%;
+	left: 35%;
+}
+.pagination{
+
+}
+.pagination a{
+	text-decoration: none;
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	background: #f1f4f4;
+	border-radius: 50%;
+	margin: 0 10px;
+}
+.pagination a.active{
+	width: 12px;
+	height: 12px;
+	margin-bottom: -2px;
+	background: white;
+}
+.pagination a:hover:not(.active){
+	background: white;
+}
+
 /* footer section
 =================*/
 
