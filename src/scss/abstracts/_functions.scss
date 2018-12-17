@@ -2,3 +2,9 @@
 	$vw-context: ($vw-base*0.01)*1px;
 	@return ($target / $vw-context)*1vw;
 }
+
+// convert pt ot rem
+@function get-rem($target){
+	@return ($target/0.75pt/10)*1rem;
+
+}
