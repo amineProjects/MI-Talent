@@ -1,1 +1,10 @@
-
+.header{
+	font-size: get-rem(14pt);
+	&__nav{
+		a{
+			display: inline-block;
+			margin-right: 50px;
+			margin-right: get-vw(50px);
+		}
+	}
+}
