@@ -1,0 +1,6 @@
+.wrapper{
+	padding-left: $wrapper-padding;
+	padding-left: get-vm($wrapper-padding);
+	padding-right: $wrapper-padding;
+	padding-right: get-vm($wrapper-padding);
+}

@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	padding: get-vw(60px);
+	box-sizing: border-box;
+}
+
+img{
+	width: 100%;
+}
