@@ -1,7 +1,35 @@
 .row{
+
+	&:not(:last-child){
+		margin-bottom: $gutter-vertical;
+		margin-bottom: get-vw($gutter-vertical);
+	}
 	&::after{
 		content: "";
 		display: table;
 		clear: both;
 	}
+
+
+
+
 }
+
+[class^="col-"]{
+	background-color: orange;
+		float: left;
+
+		&:not(:last-child){
+			margin-right: $gutter-horizontal;
+			margin-right: get-vw($gutter-horizontal);
+		}
+}
+
+.col-1-of-4-md{
+		@include col-width(1,$gutter-horizontal,4);
+	}
+.col-2-of-4-md{
+		@include col-width(2,$gutter-horizontal,4);
+	}
+
+

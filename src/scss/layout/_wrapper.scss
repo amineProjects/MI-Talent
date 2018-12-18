@@ -1,6 +1,5 @@
 .wrapper{
-	padding-left: $wrapper-padding;
-	padding-left: get-vm($wrapper-padding);
-	padding-right: $wrapper-padding;
-	padding-right: get-vm($wrapper-padding);
+	max-width: 1680px;
+	max-width: get-vw(1680px);
+	margin: 0 auto;
 }

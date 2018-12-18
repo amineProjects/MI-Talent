@@ -1,0 +1,4 @@
+@mixin col-width($span,$gutter,$col-numb){
+	$gutter: get-vw($gutter);
+	width: calc(#{$span} * ((100% - (#{$col-numb} - #{$span}) * #{$gutter})/#{$col-numb}));
+}
