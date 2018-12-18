@@ -7,4 +7,16 @@
 			margin-right: get-vw(50px);
 		}
 	}
+	&__logo{
+		text-align: center;
+		img{
+			width: 225px;
+			width: get-vw(225px);
+		}
+
+
+	}
+	&__search{
+		float: right;
+	}
 }
