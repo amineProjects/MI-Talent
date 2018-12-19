@@ -10,8 +10,12 @@
 	&__logo{
 		text-align: center;
 		img{
-			width: 225px;
-			width: get-vw(225px);
+
+			@include respond(desktop){
+				width: 225px;
+				width: get-vw(225px);
+			}
+
 		}
 
 
