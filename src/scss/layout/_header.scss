@@ -1,10 +1,20 @@
 .header{
 	font-size: get-rem(14pt);
-	&__nav{
-		a{
-			display: inline-block;
-			margin-right: 50px;
-			margin-right: get-vw(50px);
+
+	&__logo{
+		text-align: center;
+		img{
+
+			@include respond(desktop){
+				width: 225px;
+				width: get-vw(225px);
+			}
+
 		}
+
+
+	}
+	&__search{
+		float: right;
 	}
 }

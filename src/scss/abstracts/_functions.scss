@@ -9,4 +9,9 @@
 
 }
 
+// convert px to em
+@function get-em($target){
+	@return ($target/16px)*1em;
+}
+
 
