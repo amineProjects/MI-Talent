@@ -1,10 +1,23 @@
 .header{
 	font-size: get-rem(14pt);
+	&__nav{
+		display: none;
+		@include respond(desktop){
+			display: inline-block;
 
+		}
+
+	}
+	&__link{
+		text-transform: uppercase;
+		margin-left: 50px;
+		margin-left: get-vw(50px);
+		font-weight: 700;
+	}
 	&__logo{
-		text-align: center;
+		text-align: right;
 		img{
-
+			width: 60%;
 			@include respond(desktop){
 				width: 225px;
 				width: get-vw(225px);
@@ -15,6 +28,13 @@
 
 	}
 	&__search{
-		float: right;
+		text-align: right;
+
+	}
+	&__input{
+		display: none;
+	}
+	&__icon{
+		display: inline-block;
 	}
 }

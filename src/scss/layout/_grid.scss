@@ -25,11 +25,18 @@
 		}
 }
 
+.col-4-of-5-sm{
+	@include col-width(4,$gutter-horizontal,5);
+}
+.col-1-of-5-sm{
+	@include col-width(1,$gutter-horizontal,5);
+}
+@include respond(desktop){
 .col-1-of-4-md{//background-color: orange;
 		@include col-width(1,$gutter-horizontal,4);
 	}
 .col-2-of-4-md{
 		@include col-width(2,$gutter-horizontal,4);
 	}
-
+}
 
