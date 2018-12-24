@@ -9,8 +9,10 @@
 		width: 44px;
 		border-radius: 50%;
 		position: fixed;
-		top: 10px;
-		left: 10px;
+		top: 31px;
+		left: 22px;
+		top: get-vw(31px);
+		left: get-vw(22px);
 		background-color: $nav-color;
 		z-index: 1000;
 		box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: .1);
@@ -24,12 +26,16 @@
 		width: get-vw(43px);
 		border-radius: 50%;
 		position: fixed;
-		top: 15px;
-		left: 15px;
+		top: 33px;
+		left: 24px;
+		top: get-vw(35px);
+		left: get-vw(26px);
 		background-image: radial-gradient($main-blue, $main-dark-blue );
 		z-index: 900;
-		transition: transform .5s;
+		transition: transform .5s,
+					opacity .7s;
 		cursor: pointer;
+		opacity: 0;
 	}
 
 	&__nav{
@@ -90,6 +96,7 @@
 		}
 	}
 	&__checkbox:checked ~ &__background{
+		opacity: 1;
 		transform: scale(180);
 		@include respond(desktop){
 			transform: scale(93);

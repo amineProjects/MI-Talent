@@ -16,16 +16,17 @@
 	}
 	&__logo{
 		text-align: right;
+		@include respond(desktop){
+			text-align: center;
+		}
 		img{
 			width: 60%;
 			@include respond(desktop){
 				width: 225px;
 				width: get-vw(225px);
+
 			}
-
 		}
-
-
 	}
 	&__search{
 		text-align: right;
