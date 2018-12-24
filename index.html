@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900|Poppins:400,500" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="dist/css/style.css" />
-	<!-- <script src="main.js"></script> -->
+
 </head>
 <body >
 	<div class="navigation ">
@@ -28,265 +28,290 @@
 			</div>
 		</nav>
 	</div>
-	<header class="header">
-			<div class="row">
-				<div class="col-1-of-4-md header__nav">
-					<a href="#" class="header__link">clients</a>
-					<a href="#" class="header__link">news</a>
+	<div class="search">
+		<button id="btn-search-close" class="btn btn--search-close" aria-label="Colse search form">
+				<i class="fas fa-times icon"></i>
+			</button>
+		<div class="search__wrap">
+
+			<form action="" class="search__form">
+				<input type="search" name="search" class="search__input"
+				placeholder="" autocomplete="off" autofocus>
+				<span class="search__info">Hit enter to search or ESC to close</span>
+			</form>
+			<div class="search__related">
+				<div class="row">
+					<div class="col-1-of-2-md search__suggestion">
+						<h3>May we suggest?</h3>
+						<p>#talent, #broken #lost #hilarious #good #red #blue #nono #why #yes #yesyes</p>
+					</div>
+					<div class="scol-1-of-2-md search__suggestion">
+						<h3>May we suggest other suggestions?</h3>
+						<p>#Jon, #broken #lost #hilarious #good #red #blue #nono #why #yes #yesyes</p>
+					</div>
 				</div>
-				<div id="logo" class="col-2-of-4-md col-4-fo-5-sm header__logo ">
+			</div>
+		</div>
+	</div>
+	<div class="main-wrap">
+		<header class="header">
+				<div class="row">
+					<div class="col-1-of-4-md header__nav">
+						<a href="#" class="header__link">clients</a>
+						<a href="#" class="header__link">news</a>
+					</div>
+					<div id="logo" class="col-2-of-4-md col-4-of-5-sm header__logo ">
+						<img  src="src/images/logo.png" alt="MItalent logo" >
+					</div>
+
+					<div id="search-wrap" class="col-1-of-4-md col-1-of-5-sm header__search-wrap ">
+							<button id="btn-search" class="btn btn--search"><i class="fas fa-search"></i></button>
+					</div>
+				</div>
+		</header>
+		<section id="hero">
+			<div class="row">
+				<div class="col-2 hero ">
+					<ul>
+						<li><i class="fab fa-facebook"></i></li>
+						<li><i class="fab fa-instagram"></i></li>
+						<li><i class="fab fa-youtube"></i></li>
+						<li><i class="fab fa-twitter"></i></li>
+						<li class="profile-number"></li>
+					</ul>
+					<div class="line"></div>
+					<p class="profile-number">02</p>
+					<button>
+						<p>view profile</p>
+					</button>
+				</div>
+				<div class="col-8 hero-image">
+					<h2>georgina alson</h2>
+					<p>young model 2020</p>
+				</div>
+				<div class="col-2 image-count">
+					<div class="row">
+					<ul class="col-6">
+						<li>01</li>
+						<li>02</li>
+						<li>03</li>
+						<li>04</li>
+					</ul>
+					<div class="col-6 horizontal-line"></div>
+				</div>
+				</div>
+			</div>
+		</section>
+		<seciton id="categories">
+			<div class="row">
+				<nav class="col-12 catigory-navigation">
+					<a href="#">actor</a>
+					<a href="#">musician</a>
+					<a href="#">comedian</a>
+					<a href="#">model</a>
+				</nav>
+				<div class="col-12">
+					<div class="col-12 talent-row">
+						<div class="col-3 category-card container">
+							<img src="src/images/talent.jpg" class="talent-image" alt="talent">
+							<div class="overlay">
+								<div class="artist-info">
+									<p>keith ruiz</p>
+									<p>comedian</p>
+								</div>
+								<div class="artist-link">
+									<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-3 category-card container">						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
+							<div class="overlay">
+								<div class="artist-info">
+									<p>keith ruiz</p>
+									<p>comedian</p>
+								</div>
+								<div class="artist-link">
+									<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-3 category-card container">						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
+							<div class="overlay">
+								<div class="artist-info">
+									<p>keith ruiz</p>
+									<p>comedian</p>
+								</div>
+								<div class="artist-link">
+									<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-3 category-card container">						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
+							<div class="overlay">
+								<div class="artist-info">
+									<p>keith ruiz</p>
+									<p>comedian</p>
+								</div>
+								<div class="artist-link">
+									<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 talent-row">
+						<div class="col-3 category-card container">
+							<img src="src/images/talent.jpg" class="talent-image" alt="talent">
+							<div class="overlay">
+								<div class="artist-info">
+									<p>keith ruiz</p>
+									<p>comedian</p>
+								</div>
+								<div class="artist-link">
+									<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-3 category-card container">						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
+							<div class="overlay">
+								<div class="artist-info">
+									<p>keith ruiz</p>
+									<p>comedian</p>
+								</div>
+								<div class="artist-link">
+									<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-3 category-card container">						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
+							<div class="overlay">
+								<div class="artist-info">
+									<p>keith ruiz</p>
+									<p>comedian</p>
+								</div>
+								<div class="artist-link">
+									<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-3 category-card container">						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
+							<div class="overlay">
+								<div class="artist-info">
+									<p>keith ruiz</p>
+									<p>comedian</p>
+								</div>
+								<div class="artist-link">
+									<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 more-catigory">
+					<button>explore more</button>
+				</div>
+			</div>
+		</seciton>
+		<section id="stories">
+
+				<div class="story-title">latest news</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="headline-story col-4">
+							<img src="src/images/small-story.jpg" alt="story image-count">
+							<a href="#">5 reasons to keep your beauty salon resevation</a>
+							<div class="story-date">8 march. 2020</div>
+						</div>
+						<div class="headline-story col-4">
+							<img src="src/images/small-story.jpg" alt="story image-count">
+							<a href="#">
+								Benjamin Franklin Method Of Habit Formation
+							</a>
+							<div class="story-date">8 march. 2020</div>
+						</div>
+						<div class="headline-story col-4">
+							<img src="src/images/small-story.jpg" alt="story image-count">
+							<a href="#"> Benjamin Franklin Method Of Habit Formation</a>
+							<div class="story-date ">8 march. 2020</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="col-9">
+							<div class="col-12">
+								<div class="col-5 gradian-story">
+									<img src="src/images/play-white.png" alt="play the story">
+									<p>Use Your Reset Button To Change Your Vibration</p>
+									<div class="story-date ">8 march. 2020</div>
+								</div>
+								<div class="col-7 container">
+									<img class="less-height" src="src/images/medium-story.jpg" alt="wider image story">
+									<button class="topright btn-trending">trending</button>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="col-7 small2-story">
+									<img src="src/images/small2-story.jpg" alt="small image story 2">
+									<p>Dream Interpretation Common Symbols And Their Meanings</p>
+									<div class="story-date ">8 march. 2020</div>
+								</div>
+								<div class="col-5 carosell-story container">
+									<img src="src/images/tall-small-story.jpg" alt="tall and small sotry image">
+									<div class="bottom-left">
+										<div class="round-play">
+											<img src="src/images/play-white.png" alt="rounded play">
+										</div>
+									</div>
+									<p >play all</p>
+									<ul>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-3 container ">
+							<img class="right-image" src="src/images/tall-story.jpg" alt="tall sotry image">
+								<div class="pagination center">
+									<a href="#"></a>
+									<a href="#" class="active"></a>
+									<a href="#"></a>
+									<a href="#"></a>
+								</div>
+							<div class="story-subtitle">
+								Motivation And Your Personal Vision An Unbeatable Force
+							</div>
+							<div class="story-date ">8 march. 2020</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<footer>
+			<div class="col-12 logo-footer">
+				<div id="logo" class="col-6">
 					<img  src="src/images/logo.png" alt="MItalent logo" >
 				</div>
-
-				<div id="search" class="col-1-of-4-md col-1-of-5-sm header__search ">
-					<form action="#">
-						<input class="header__input" type="search" name="search" placeholder="Search">
-						<a class="header__icon"><i class="fas fa-search"></i></a>
-					</form>
+				<div class="col-6 sign-up">
+					<p>sign up our newsletter</p>
+					<i class="far fa-envelope"></i>
 				</div>
 			</div>
-	</header>
-	<section id="hero">
-		<div class="row">
-			<div class="col-2 hero ">
-				<ul>
-					<li><i class="fab fa-facebook"></i></li>
-					<li><i class="fab fa-instagram"></i></li>
-					<li><i class="fab fa-youtube"></i></li>
-					<li><i class="fab fa-twitter"></i></li>
-					<li class="profile-number"></li>
-				</ul>
-				<div class="line"></div>
-				<p class="profile-number">02</p>
-				<button>
-					<p>view profile</p>
-				</button>
-			</div>
-			<div class="col-8 hero-image">
-				<h2>georgina alson</h2>
-				<p>young model 2020</p>
-			</div>
-			<div class="col-2 image-count">
-				<div class="row">
-				<ul class="col-6">
-					<li>01</li>
-					<li>02</li>
-					<li>03</li>
-					<li>04</li>
-				</ul>
-				<div class="col-6 horizontal-line"></div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<seciton id="categories">
-		<div class="row">
-			<nav class="col-12 catigory-navigation">
-				<a href="#">actor</a>
-				<a href="#">musician</a>
-				<a href="#">comedian</a>
-				<a href="#">model</a>
-			</nav>
 			<div class="col-12">
-				<div class="col-12 talent-row">
-					<div class="col-3 category-card container">
-						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
-						<div class="overlay">
-							<div class="artist-info">
-								<p>keith ruiz</p>
-								<p>comedian</p>
-							</div>
-							<div class="artist-link">
-								<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-3 category-card container">						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
-						<div class="overlay">
-							<div class="artist-info">
-								<p>keith ruiz</p>
-								<p>comedian</p>
-							</div>
-							<div class="artist-link">
-								<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-3 category-card container">						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
-						<div class="overlay">
-							<div class="artist-info">
-								<p>keith ruiz</p>
-								<p>comedian</p>
-							</div>
-							<div class="artist-link">
-								<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-3 category-card container">						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
-						<div class="overlay">
-							<div class="artist-info">
-								<p>keith ruiz</p>
-								<p>comedian</p>
-							</div>
-							<div class="artist-link">
-								<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
-							</div>
-						</div>
-					</div>
+				<div class="col-6 copyright">
+					<p>© 2018 MI Talent. Designed by Tranmautritam for Mass Impressions.</p>
 				</div>
-				<div class="col-12 talent-row">
-					<div class="col-3 category-card container">
-						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
-						<div class="overlay">
-							<div class="artist-info">
-								<p>keith ruiz</p>
-								<p>comedian</p>
-							</div>
-							<div class="artist-link">
-								<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-3 category-card container">						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
-						<div class="overlay">
-							<div class="artist-info">
-								<p>keith ruiz</p>
-								<p>comedian</p>
-							</div>
-							<div class="artist-link">
-								<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-3 category-card container">						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
-						<div class="overlay">
-							<div class="artist-info">
-								<p>keith ruiz</p>
-								<p>comedian</p>
-							</div>
-							<div class="artist-link">
-								<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-3 category-card container">						<img src="src/images/talent.jpg" class="talent-image" alt="talent">
-						<div class="overlay">
-							<div class="artist-info">
-								<p>keith ruiz</p>
-								<p>comedian</p>
-							</div>
-							<div class="artist-link">
-								<a href="#"><img src="src/images/arrowUpRight.png" alt=""></a>
-							</div>
-						</div>
-					</div>
+				<div class="col-6 social-footer">
+					<ul>
+						<li><i class="fab fa-facebook"></i></li>
+						<li><i class="fab fa-instagram"></i></li>
+						<li><i class="fab fa-youtube"></i></li>
+						<li><i class="fab fa-twitter"></i></li>
+					</ul>
 				</div>
 			</div>
-			<div class="col-12 more-catigory">
-				<button>explore more</button>
-			</div>
-		</div>
-	</seciton>
-	<section id="stories">
-
-			<div class="story-title">latest news</div>
-			<div class="row">
-				<div class="col-12">
-					<div class="headline-story col-4">
-						<img src="src/images/small-story.jpg" alt="story image-count">
-						<a href="#">5 reasons to keep your beauty salon resevation</a>
-						<div class="story-date">8 march. 2020</div>
-					</div>
-					<div class="headline-story col-4">
-						<img src="src/images/small-story.jpg" alt="story image-count">
-						<a href="#">
-							Benjamin Franklin Method Of Habit Formation
-						</a>
-						<div class="story-date">8 march. 2020</div>
-					</div>
-					<div class="headline-story col-4">
-						<img src="src/images/small-story.jpg" alt="story image-count">
-						<a href="#"> Benjamin Franklin Method Of Habit Formation</a>
-						<div class="story-date ">8 march. 2020</div>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="col-9">
-						<div class="col-12">
-							<div class="col-5 gradian-story">
-								<img src="src/images/play-white.png" alt="play the story">
-								<p>Use Your Reset Button To Change Your Vibration</p>
-								<div class="story-date ">8 march. 2020</div>
-							</div>
-							<div class="col-7 container">
-								<img class="less-height" src="src/images/medium-story.jpg" alt="wider image story">
-								<button class="topright btn-trending">trending</button>
-							</div>
-						</div>
-						<div class="col-12">
-							<div class="col-7 small2-story">
-								<img src="src/images/small2-story.jpg" alt="small image story 2">
-								<p>Dream Interpretation Common Symbols And Their Meanings</p>
-								<div class="story-date ">8 march. 2020</div>
-							</div>
-							<div class="col-5 carosell-story container">
-								<img src="src/images/tall-small-story.jpg" alt="tall and small sotry image">
-								<div class="bottom-left">
-									<div class="round-play">
-										<img src="src/images/play-white.png" alt="rounded play">
-									</div>
-								</div>
-								<p >play all</p>
-								<ul>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-3 container ">
-						<img class="right-image" src="src/images/tall-story.jpg" alt="tall sotry image">
-							<div class="pagination center">
-								<a href="#"></a>
-								<a href="#" class="active"></a>
-								<a href="#"></a>
-								<a href="#"></a>
-							</div>
-						<div class="story-subtitle">
-							Motivation And Your Personal Vision An Unbeatable Force
-						</div>
-						<div class="story-date ">8 march. 2020</div>
-					</div>
-				</div>
-			</div>
-	</section>
-	<footer>
-		<div class="col-12 logo-footer">
-			<div id="logo" class="col-6">
-				<img  src="src/images/logo.png" alt="MItalent logo" >
-			</div>
-			<div class="col-6 sign-up">
-				<p>sign up our newsletter</p>
-				<i class="far fa-envelope"></i>
-			</div>
-		</div>
-		<div class="col-12">
-			<div class="col-6 copyright">
-				<p>© 2018 MI Talent. Designed by Tranmautritam for Mass Impressions.</p>
-			</div>
-			<div class="col-6 social-footer">
-				<ul>
-					<li><i class="fab fa-facebook"></i></li>
-					<li><i class="fab fa-instagram"></i></li>
-					<li><i class="fab fa-youtube"></i></li>
-					<li><i class="fab fa-twitter"></i></li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-
+		</footer>
+</div>
+	<!-- for test only -->
+	<script src="src/js/main.js"></script>
 </body>
 </html>
