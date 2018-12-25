@@ -30,6 +30,20 @@
 	}
 	&__search-wrap{
 		text-align: right;
+		@include respond(desktop){
+				&::before{
+				content: '';
+				width:772px;
+				height: 720px;
+				width: get-vw(772px);
+				height: get-vw(720px);
+				background-color: $main-blue;
+				position: absolute;
+				top: -60px;
+				right: -60px;
+				z-index: -2;
+			}
+		}
 
 	}
 	&__input{
