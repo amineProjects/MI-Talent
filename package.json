@@ -15,11 +15,12 @@
     "clean": "rimraf dist/{css/*,js/*,images/*}",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "scss": "onerror \"node-sass  -o dist/css src/scss\"",
-    "uglify": "onerror \"mkdirp dist/js -p && uglifyjs src/js/*.js -m -c -o dist/js/main.min.js\"",
     "lint-scss": "stylelint src/scss/*.scss --syntax scss || true",
     "lint": "eslint src/js || true",
+    "babel": "babel src/js/main.js -o src/js/main-compiled.js",
+    "bundel": "webpack --mode development ./src/js/index.js --output ./dist/js/main.js --module-bind js=babel-loader",
     "build:css": "run-s lint-scss scss autoprefixer",
-    "build:js": "run-s lint uglify",
+    "build:js": "run-s lint bundel",
     "build": "run-s build:*",
     "serve": "browser-sync start --server --files \"dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html\"",
     "watch:css": "onchange \"src/scss\" -- run-s build:css",
@@ -28,7 +29,12 @@
     "postinstall": "run-s build watch"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "autoprefixer": "^9.0.1",
+    "babel-loader": "^8.0.4",
     "browser-sync": "^2.12.8",
     "cli-error-notifier": "^2.0.1",
     "eslint": "^5.2.0",
@@ -45,6 +51,7 @@
     "postcss-cli": "^6.0.0",
     "rimraf": "^2.5.4",
     "stylelint": "^9.4.0",
-    "uglify-es": "^3.3.10"
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
   }
 }

@@ -2,8 +2,6 @@
 the code for the search component
 */
 
-;(function(global){
-
   'use strict';
 
   var mainContainer= document.querySelector('.main-wrap'),
@@ -44,5 +42,5 @@ the code for the search component
         inputSearch.value='';
       }
 
-      init();
-})(window);
+     export {init}
+
