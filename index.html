@@ -69,9 +69,9 @@
 					</div>
 				</div>
 		</header>
-		<section id="hero">
+		<section class="slider">
 			<div class="row">
-				<div class="col-2 hero ">
+				<div class="slider__social">
 					<ul>
 						<li><i class="fab fa-facebook"></i></li>
 						<li><i class="fab fa-instagram"></i></li>
@@ -79,26 +79,48 @@
 						<li><i class="fab fa-twitter"></i></li>
 						<li class="profile-number"></li>
 					</ul>
-					<div class="line"></div>
-					<p class="profile-number">02</p>
-					<button>
+				</div>
+				<!-- slides -->
+				<div class="slide">
+					<img src="/src/images/profile-1.png" alt="profile one image" class="slide__image-profile">
+					<h2 class="slide__title">georgina alson</h2>
+					<p class="slide__subTitle">young model 2020</p>
+				</div>
+				<div class="slide slide--current">
+					<img src="/src/images/profile-2.png" alt="profile tow image" class="slide__image-profile">
+					<h2 class="slide__title">derek anderson</h2>
+					<p class="slide__subTitle">british comedian</p>
+				</div>
+				<div class="slide">
+					<img src="/src/images/profile-3.png" alt="profile three image" class="slide__image-profile">
+					<h2 class="slide__title">georgina soulan</h2>
+					<p class="slide__subTitle">young comedian 2021</p>
+				</div>
+				<div class="slide">
+					<img src="/src/images/profile-4.png" alt="profile one image" class="slide__image-profile">
+					<h2 class="slide__title">derek alson</h2>
+					<p class="slide__subTitle">british model 2020</p>
+				</div>
+				<!-- slides end -->
+					<div class="slider__profile-number">
+						<span class="profile-number">02</span>
+					</div>
+					<button class="btn btn--profile-viwer">
 						<p>view profile</p>
 					</button>
-				</div>
-				<div class="col-8 hero-image">
-					<h2>georgina alson</h2>
-					<p>young model 2020</p>
-				</div>
-				<div class="col-2 image-count">
-					<div class="row">
-					<ul class="col-6">
-						<li>01</li>
-						<li>02</li>
-						<li>03</li>
-						<li>04</li>
-					</ul>
-					<div class="col-6 horizontal-line"></div>
-				</div>
+
+				<div class="slider__navigation">
+					<div class="slider__pagination">
+						<ul class="slider__profile-list">
+							<li>01</li>
+							<li>02</li>
+							<li>03</li>
+							<li>04</li>
+						</ul>
+						<button class="btn btn--nav-prev"><i class="fas fa-arrow-left"></i><span class="text-hidden">Previous profile</span></button>
+						<button class="btn btn--nav-next"><i class="fas fa-arrow-right"></i><span class="text-hidden">Next profile</span></button>
+					</div>
+
 				</div>
 			</div>
 		</section>
