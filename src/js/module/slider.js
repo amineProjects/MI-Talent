@@ -29,7 +29,7 @@ import {classie} from './classie';
         document.addEventListener('keydown', function(e){
           if(e.keyCode == 37){
             navigate('left');
-          }else if(e.keyCode){
+          }else if(e.keyCode == 39){
             navigate('right');
           }
         });
