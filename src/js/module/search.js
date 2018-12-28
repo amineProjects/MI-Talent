@@ -42,5 +42,5 @@ the code for the search component
         inputSearch.value='';
       }
 
-     export {init}
+     export {init as search}
 

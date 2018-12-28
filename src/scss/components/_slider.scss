@@ -29,12 +29,12 @@
 			font-size: get-vw(18px);
 		}
 		&::before{
-			content: '';
 			position: absolute;
 			left: 18.5px;
 			width: 15px;
 			top: .7rem;
 			@include respond(tab-port){
+				content: '';
 				top: 1rem;
 				left: get-vw(72px);
 				width: 60px;

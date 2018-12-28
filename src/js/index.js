@@ -1,5 +1,7 @@
 'use strict';
 
-import {init}  from "./search";
+import {search}  from "./module/search" ;
+import {slider} from "./module/slider";
 
-init();
+search();
+slider();
