@@ -21,4 +21,56 @@
 		pointer-events: none;
 		opacity: 0;
 	}
+	&--profile-viwer{
+		position: absolute;
+		z-index: 200;
+		left: 0;
+		bottom:0;
+		width: 100%;
+		@include respond(tab-port){
+			width: 23.4rem;
+		}
+		height: get-vw(110px);
+		background-color: $main-blue;
+		color: #fff;
+		font-size: 1.4rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		&::before{
+			@include respond(tab-port){
+				content: '';
+			}
+			position: absolute;
+			right: get-vw(-110px);
+			top: 0;
+			width: get-vw(110px);
+			height: get-vw(110px);
+			background-color:#fff;
+			background-image: url(/src/images/play.png);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+	&--nav{
+		&-prev,
+		&-next{
+			display: block;
+			@include respond(tab-port){
+				display: none;
+			}
+			position: absolute;
+			z-index: 201;
+			bottom: 0;
+			color: #fff;
+			font-size: 1.2rem;
+			padding-bottom: .2rem;
+		}
+		&-prev{
+			left: 0;
+		}
+		&-next{
+			right: 0;
+		}
+	}
 }

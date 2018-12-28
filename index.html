@@ -71,15 +71,7 @@
 		</header>
 		<section class="slider">
 			<div class="row">
-				<div class="slider__social">
-					<ul>
-						<li><i class="fab fa-facebook"></i></li>
-						<li><i class="fab fa-instagram"></i></li>
-						<li><i class="fab fa-youtube"></i></li>
-						<li><i class="fab fa-twitter"></i></li>
-						<li class="profile-number"></li>
-					</ul>
-				</div>
+
 				<!-- slides -->
 				<div class="slide">
 					<img src="/src/images/profile-1.png" alt="profile one image" class="slide__image-profile">
@@ -102,26 +94,34 @@
 					<p class="slide__subTitle">british model 2020</p>
 				</div>
 				<!-- slides end -->
+				<div class="slider__social">
+					<ul>
+						<li><i class="fab fa-facebook"></i></li>
+						<li><i class="fab fa-instagram"></i></li>
+						<li><i class="fab fa-youtube"></i></li>
+						<li><i class="fab fa-twitter"></i></li>
+					</ul>
+				</div>
 					<div class="slider__profile-number">
-						<span class="profile-number">02</span>
+						<span>02</span>
 					</div>
 					<button class="btn btn--profile-viwer">
-						<p>view profile</p>
+						view profile
 					</button>
 
 				<div class="slider__navigation">
 					<div class="slider__pagination">
-						<ul class="slider__profile-list">
-							<li>01</li>
-							<li>02</li>
-							<li>03</li>
-							<li>04</li>
+						<ul >
+							<li class="slider__profile-item">01</li>
+							<li class="slider__profile-item slider__profile-item--current  ">02</li>
+							<li class="slider__profile-item">03</li>
+							<li class="slider__profile-item">04</li>
 						</ul>
-						<button class="btn btn--nav-prev"><i class="fas fa-arrow-left"></i><span class="text-hidden">Previous profile</span></button>
-						<button class="btn btn--nav-next"><i class="fas fa-arrow-right"></i><span class="text-hidden">Next profile</span></button>
 					</div>
 
 				</div>
+				<button class="btn btn--nav-prev"><i class="fas fa-arrow-left"></i><span class="text-hidden">Previous profile</span></button>
+						<button class="btn btn--nav-next"><i class="fas fa-arrow-right"></i><span class="text-hidden">Next profile</span></button>
 			</div>
 		</section>
 		<seciton id="categories">

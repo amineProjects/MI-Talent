@@ -14,7 +14,8 @@
 	&__image-profile{
 		width:1121px;
 		width: get-vw(1121px);
-
+		display: block;
+		margin: 0 auto;
 	}
 	&__title{
 		font-size: get-vw(200px);

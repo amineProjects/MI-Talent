@@ -1,5 +1,6 @@
 .header{
 	font-size: get-rem(14pt);
+	margin-bottom: get-vw($gutter-vertical);
 	&__nav{
 		display: none;
 		@include respond(desktop){

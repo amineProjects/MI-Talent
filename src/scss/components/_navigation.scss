@@ -39,15 +39,13 @@
 	}
 
 	&__nav{
+		display: none;
 		height: 100vh;
-		width: 0%;
 		position: fixed;
 		top:0;
 		left: 0;
+		width: 100%;
 		z-index: 901;
-		opacity: 0;
-		transition: opacity 1s ,
-					width 1s ;
 	}
 
 	&__list{
@@ -103,8 +101,7 @@
 		}
 	}
 	&__checkbox:checked ~ &__nav{
-		width: 100%;
-		opacity: 1;
+		display: block;
 	}
 
 	&__icon{

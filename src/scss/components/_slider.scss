@@ -4,7 +4,81 @@
 	width: 100%;
 	text-align: center;
 	user-select: none;
+	margin-bottom: get-vw($gutter-vertical);
+	&__social{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 200;
+		font-size: 1rem;
+		@include respond(tab-land){
+			font-size: 1.6rem;
+		}
+		& li:hover{
+			color: $secondary-blue;
+		}
+	}
+	&__profile-number{
+		position: absolute;
+		bottom: get-vw(270px);
+		left: 0;
+		font-family: 'Poppins',sans-serif;
+		font-size: 1rem;
+		transform: rotate(-90deg);
+		@include respond(tab-land){
+			font-size: get-vw(18px);
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			left: 18.5px;
+			width: 15px;
+			top: .7rem;
+			@include respond(tab-port){
+				top: 1rem;
+				left: get-vw(72px);
+				width: 60px;
+			}
+			height:2px;
+			background: $black;
+		}
+	}
+	&__navigation{
 
-
-
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: get-vw(480px);
+		height: get-vw(353px);
+	}
+	&__pagination{
+		display: none;
+		@include respond(tab-port){
+			display: block;
+		}
+	}
+	&__profile-item{
+		margin-top: get-vw(38px);
+		color: $gray;
+		position: relative;
+		z-index: 200;
+		&::before{
+			content: '';
+			position: absolute;
+			right: get-vw(100px);
+			top: .7rem;
+			height: 2px;
+			@include respond(tab-port){
+				width: get-vw(57px);
+			}
+			background: $black;
+			display: none;
+		}
+		&--current{
+			color: $black;
+			&.slider__profile-item::before{
+				display: block;
+			}
+		}
+	}
 }
