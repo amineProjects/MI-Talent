@@ -44,7 +44,6 @@
 		}
 	}
 	&__navigation{
-
 		position: absolute;
 		bottom: 0;
 		right: 0;
@@ -55,6 +54,7 @@
 		display: none;
 		@include respond(tab-port){
 			display: block;
+			padding-top: get-vw(38px);
 		}
 	}
 	&__profile-item{
