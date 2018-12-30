@@ -11,16 +11,19 @@
 	}
 }
 
-[class^="col-"]{
+@include respond(tab-port){
 
-		float: left;
+	[class^="col-"]{
 
-		&:not(:last-child){
-			margin-right: $gutter-horizontal;
-			margin-right: get-vw($gutter-horizontal);
-		}
+			float: left;
+
+			&:not(:last-child){
+				margin-right: $gutter-horizontal;
+				margin-right: get-vw($gutter-horizontal);
+			}
+
+	}
 }
-
 .col-4-of-5-sm{
 	@include col-width(4,$gutter-horizontal,5);
 }

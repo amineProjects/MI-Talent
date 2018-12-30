@@ -75,33 +75,22 @@
 	}
 	&--explore-more{
 		position: relative;
-		width: get-vw(220px);
-		height: get-vw(62px);
+		width: 100%;
+		font-size: 1.4rem;
+		@include respond(tab-port){
+			width: get-vw(220px);
+			height: get-vw(62px);
+			font-size: get-vw(14px);
+		}
 		color: #fff;
 		background-color: $main-blue;
 		text-transform: uppercase;
-		font-size: get-vw(14px);
 		font-weight: 700;
-
+		border-radius: 30px;
 		&:hover,
 		&:active{
 			background-color: $main-dark-blue;
 		}
-		&::before,
-		&::after{
-			content: '';
-			width: get-vw(62px);
-			height: get-vw(62px);
-			background-color: inherit;
-			position: absolute;
-			top: 0;
-			border-radius: 50%;
-		}
-		&::before{
-			left: get-vw(-30px);
-		}
-		&::after{
-			right: get-vw(-30px);
-		}
+
 	}
 }
