@@ -1,0 +1,64 @@
+.cards{
+	position: relative;
+
+	&:hover &__overlay{
+		display: block;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($black,.7);
+		}
+	}
+	&__overlay{
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&__img{
+		display: block;
+		width: 100%;
+	}
+	&__artist-info{
+		position: absolute;
+		bottom: get-vw(50px);
+		left: 50%;
+		transform: translateX(-50%);
+		color: #fff;
+		font-family: 'Poppins',sans-serif;
+		font-size: get-vw(30px);
+		& p:last-child{
+			font-family: $main-font, sans-serif;
+			font-size: get-vw(12px);
+			font-weight: 700;
+			text-transform: uppercase;
+			color: $gray;
+		}
+
+	}
+	&__artist-link{
+		position: absolute;
+		top: get-vw(20px);
+		right: get-vw(20px);
+		width: get-vw(56px);
+		height: get-vw(56px);
+		border-radius: 50%;
+		background-color: $main-blue;
+
+		& img{
+			display: block;
+			width: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+	}
+}
