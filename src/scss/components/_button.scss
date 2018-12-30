@@ -93,4 +93,15 @@
 		}
 
 	}
+	&--trending{
+		position: absolute;
+		top: get-vw(10px);
+		right: get-vw(10px);
+		width: get-vw(206px);
+		height: get-vw(56px);
+		background-color: #fff;
+		text-transform: uppercase;
+		font-weight: 800;
+		font-size: get-vw(14px);
+	}
 }
