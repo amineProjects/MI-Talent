@@ -24,12 +24,7 @@
 
 	}
 }
-.col-4-of-5-sm{
-	@include col-width(4,$gutter-horizontal,5);
-}
-.col-1-of-5-sm{
-	@include col-width(1,$gutter-horizontal,5);
-}
+
 @include respond(tab-port){
 .col-1-of-4-md{
 		@include col-width(1,$gutter-horizontal,4);
