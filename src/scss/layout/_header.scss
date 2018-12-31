@@ -16,20 +16,19 @@
 		font-weight: 700;
 	}
 	&__logo{
-		text-align: right;
-		@include respond(desktop){
-			text-align: center;
-		}
 		img{
 			width: 60%;
+			margin: 0 auto;
 			@include respond(desktop){
 				width: 225px;
 				width: get-vw(225px);
-
 			}
 		}
 	}
 	&__search-wrap{
+		position: absolute;
+		top: 0;
+		right: 0;
 		text-align: right;
 		@include respond(desktop){
 				&::before{
@@ -40,8 +39,8 @@
 				height: get-vw(720px);
 				background-color: $main-blue;
 				position: absolute;
-				top: -60px;
-				right: -60px;
+				top: get-vw(-60px);
+				right: get-vw(-60px);
 				z-index: -2;
 			}
 		}
