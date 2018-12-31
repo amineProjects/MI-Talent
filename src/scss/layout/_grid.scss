@@ -1,6 +1,6 @@
 .row{
 
-	&:not(:last-child){
+	&--with-gutter:not(:last-child){
 		margin-bottom: $gutter-vertical;
 		margin-bottom: get-vw($gutter-vertical);
 	}

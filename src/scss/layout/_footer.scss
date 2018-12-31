@@ -1,10 +1,43 @@
 .footer{
-background: red;
+
 	&__info-1{
-		border-bottom: 1px solid $black;
+		border-bottom: 2px solid $gray;
+		padding-bottom: get-vw(35px);
 	}
 	&__logo{
 			width: get-vw(200px);
 			height: get-vw(30px);
+	}
+	&__news-letter{
+		font-size: get-vw(14px);
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		text-align: right;
+		& span{
+			border-left: 2px solid $main-blue;
+			padding: get-vw(15px) get-vw(50px);
+		}
+		& i{
+			font-size: get-vw(16px);
+		}
+	}
+	&__info-2{
+		padding-top: get-vw(50px);
+
+	}
+	&__copyright{
+		color: $gray;
+		font-size: get-vw(15px);
+		text-transform: capitalize;
+	}
+	&__social{
+		text-align: right;
+		font-size: get-vw(16px);
+		& li{
+			display: inline;
+			margin-left: get-vw(40px);
+		}
+
 	}
 }
