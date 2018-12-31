@@ -1,0 +1,10 @@
+.footer{
+background: red;
+	&__info-1{
+		border-bottom: 1px solid $black;
+	}
+	&__logo{
+			width: get-vw(200px);
+			height: get-vw(30px);
+	}
+}
