@@ -1,4 +1,5 @@
 .news{
+	margin-bottom: $gutter-vertical;
 	&__title{
 		position: relative;
 		text-align: center;
@@ -35,7 +36,8 @@
 			font-size: get-vw(16px);
 		}
 		color: $gray;
-		margin-top: get-vw(25px);
+		margin-top: get-vw(22px);
+		text-transform: capitalize;
 	}
 	&__trending{
 		position: relative;
@@ -79,12 +81,10 @@
 				text-transform: uppercase;
 				color: #fff;
 				position: absolute;
-				bottom: get-vw(30px);
-				left: get-vw(120px);
+				bottom: get-vw(80px);
+				left: get-vw(140px);
 			}
-			& ul{
-				position: absolute;
-			}
+
 		}
 	}
 	&__text--white{
@@ -110,7 +110,54 @@
 			font-family: $secondary-font, sans-serif;
 			font-size: get-vw(24px);
 			font-weight: 500;
-			margin: get-vw(40px) 0;
+			margin-top: get-vw(30px);
 		}
+	&__trending--vertical{
+		position: relative;
+		& img{
+			height: get-vw(855px);
+		}
+	}
+	&__trending-pagination{
+		position: absolute;
+		&--vertical{
+			bottom:get-vw(165px);
+			right: get-vw(34px);
+			& a{
+				margin: get-vw(5px) 0;
+			}
+		}
+
+		&--horizontal{
+			bottom:get-vw(220px);
+			right: 50%;
+			transform: translateX(50%);
+			& a{
+				margin: 0 get-vw(15px);
+			}
+		}
+		& a{
+			position: relative;
+			display: inline-block;
+			&::before{
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 6px;
+				height: 6px;
+				background-color: rgba(#fff, .7);
+				border-radius: 50%;
+			}
+			&:hover,
+			&:active{
+				&::before{
+					width: 10px;
+					height: 10px;
+					opacity: 1;
+				}
+			}
+		}
+	}
 
 }
