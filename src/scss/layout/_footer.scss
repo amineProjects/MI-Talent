@@ -5,21 +5,32 @@
 		padding-bottom: get-vw(35px);
 	}
 	&__logo{
+		display: none;
+		@include respond(tab-port){
 			width: get-vw(200px);
 			height: get-vw(30px);
+			display: block;
+		}
 	}
 	&__news-letter{
-		font-size: get-vw(14px);
+		@include respond(tab-land){
+			font-size: get-vw(14px);
+			text-align: right;
+		}
+		font-display: 1.4rem;
 		font-weight: bold;
 		text-transform: uppercase;
 		letter-spacing: 4px;
-		text-align: right;
+		text-align: center;
 		& span{
 			border-left: 2px solid $main-blue;
 			padding: get-vw(15px) get-vw(50px);
 		}
 		& i{
-			font-size: get-vw(16px);
+			font-size: 1rem;
+			@include respond(tab-land){
+				font-size: get-vw(16px);
+			}
 		}
 	}
 	&__info-2{
@@ -28,10 +39,19 @@
 	}
 	&__copyright{
 		color: $gray;
-		font-size: get-vw(15px);
+		@include respond(tab-land){
+			font-size: get-vw(15px);
+			text-align: left;
+		}
+		font-size: 1rem;
 		text-transform: capitalize;
+		text-align: center;
 	}
 	&__social{
+		display: none;
+		@include respond(tab-port){
+			display: block;
+		}
 		text-align: right;
 		font-size: get-vw(16px);
 		& li{

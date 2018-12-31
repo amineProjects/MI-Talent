@@ -30,7 +30,7 @@
 .col-1-of-5-sm{
 	@include col-width(1,$gutter-horizontal,5);
 }
-@include respond(desktop){
+@include respond(tab-port){
 .col-1-of-4-md{
 		@include col-width(1,$gutter-horizontal,4);
 		&--no-gutter{

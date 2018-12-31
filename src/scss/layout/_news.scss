@@ -1,10 +1,13 @@
 .news{
-	margin-bottom: $gutter-vertical;
+	margin-bottom: get-vw($gutter-vertical) ;
 	&__title{
 		position: relative;
 		text-align: center;
 		font-family: $secondary-font, sans-serif;
-		font-size: 6rem;
+		font-size: 3rem;
+		@include respond(tab-port){
+			font-size: 6rem;
+		}
 		text-transform: capitalize;
 		padding-bottom: get-vw(20px);
 		margin-bottom: get-vw(70px);
@@ -12,7 +15,10 @@
 		&::after{
 			content: '';
 			height: 2px;
-			width: get-vw(150px);
+			@include respond(tab-port){
+				width: get-vw(150px);
+			}
+			width: 6rem;
 			position: absolute;
 			bottom: 0;
 			left: 50%;
@@ -38,6 +44,12 @@
 		color: $gray;
 		margin-top: get-vw(22px);
 		text-transform: capitalize;
+	}
+	&__story{
+		display: none;
+		@include respond(tab-port){
+			display: block;
+		}
 	}
 	&__trending{
 		position: relative;
