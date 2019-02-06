@@ -60,6 +60,7 @@
 	&__profile-item{
 		margin-top: get-vw(38px);
 		color: $gray;
+		cursor: pointer;
 		position: relative;
 		z-index: 200;
 		&::before{
