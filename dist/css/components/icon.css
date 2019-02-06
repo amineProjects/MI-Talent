@@ -1,0 +1,5 @@
+.icon {
+  display: block;
+  font-size: get-rem(44pt);
+  margin: 0 auto;
+  background-color: red; }
